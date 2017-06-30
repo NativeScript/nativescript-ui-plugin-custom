@@ -1,0 +1,8 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" class="page"
+  xmlns:ui="nativescript-ui-plugin-custom">
+     <StackLayout>
+        <ui:MyButton text="MyButton1" tap="onTap" />
+        <ui:MyButton text="MyButton2" tap="onTap" />
+        <ui:MyButton text="MyButton3" tap="onTap" />
+     </StackLayout>
+</Page>
