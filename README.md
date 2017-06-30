@@ -1,30 +1,18 @@
-# Your Plugin Name
+# UI Plugin example (Custom button component)
 
-Add your plugin badges here. See [nativescript-urlhandler](https://github.com/hypery2k/nativescript-urlhandler) for example.
-
-Then describe what's the purpose of your plugin. 
-
-In case you develop UI plugin, this is where you can add some screenshots.
-
-## (Optional) Prerequisites / Requirements
-
-Describe the prerequisites that the user need to have installed before using your plugin. See [nativescript-firebase plugin](https://github.com/eddyverbruggen/nativescript-plugin-firebase) for example.
+This plugin shows how you can build UI plugin using a Custom Component. A simple Button is given as example.
 
 ## Installation
 
-Describe your plugin installation steps. Ideally it would be something like:
+To install the plugin:
 
 ```javascript
-tns plugin add <your-plugin-name>
+tns plugin add nativescript-ui-plugin-custom
 ```
 
 ## Usage 
 
-Describe any usage specifics for your plugin. Give examples for Android, iOS, Angular if needed. See [nativescript-drop-down](https://www.npmjs.com/package/nativescript-drop-down) for example.
-	
-	```javascript
-    Usage code snippets here
-    ```)
+You need to add `xmlns:ui="nativescript-ui-plugin-custom"` to your page tag, and then simply use `<ui:MyButton text="MyButton1" />` in order to add the widget to your page.
 
 ## API
 
@@ -32,8 +20,8 @@ Describe your plugin methods and properties here. See [nativescript-feedback](ht
     
 | Property | Default | Description |
 | --- | --- | --- |
-| some property | property default value | property description, default values, etc.. |
-| another property | property default value | property description, default values, etc.. |
+| text | "" | used to set the text of the button |
+| tap | "" | sets the callback that is called when the button is tapped |
     
 ## License
 
