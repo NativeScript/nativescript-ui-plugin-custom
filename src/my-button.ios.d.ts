@@ -1,4 +1,4 @@
-import { MyButtonBase } from "./my-button-base";
+import { MyButtonBase } from "./my-button.common";
 export declare class MyButton extends MyButtonBase {
     nativeView: UIButton;
     createNativeView(): Object;

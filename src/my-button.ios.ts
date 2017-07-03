@@ -1,4 +1,4 @@
-import { MyButtonBase, textProperty, myOpacityProperty } from "./my-button-base";
+import { MyButtonBase, textProperty, myOpacityProperty } from "./my-button.common";
 
 // class that handles all native 'tap' callbacks
 class TapHandler extends NSObject {
@@ -55,7 +55,7 @@ export class MyButton extends MyButtonBase {
     disposeNativeView(): void {
         // Remove reference from native listener to this instance.
         (<any>this.nativeView).owner = null;
-        
+
         // If you want to recycle nativeView and have modified the nativeView 
         // without using Property or CssProperty (e.g. outside our property system - 'setNative' callbacks)
         // you have to reset it to its initial state here.

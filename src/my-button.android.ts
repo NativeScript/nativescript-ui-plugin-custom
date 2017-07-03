@@ -1,4 +1,4 @@
-import { MyButtonBase, textProperty, myOpacityProperty } from "./my-button-base";
+import { MyButtonBase, textProperty, myOpacityProperty } from "./my-button.common";
 
 let clickListener: android.view.View.OnClickListener;
 
