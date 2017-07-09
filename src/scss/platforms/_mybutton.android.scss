@@ -1,0 +1,9 @@
+// Variables overrides for Android
+
+$mybtn-border-width: 5;
+$mybtn-border-radius: 5;
+
+// Import common styles
+@import '../mybutton';
+
+// Describe Android specific styles

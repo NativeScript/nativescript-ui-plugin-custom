@@ -1,5 +1,6 @@
 import { MyButton as ButtonDefinition } from "./my-button";
 import { View, Style, Property, CssProperty, isIOS } from "tns-core-modules/ui/core/view";
+import { TextBase } from "tns-core-modules/ui/text-base";
 
 export const textProperty = new Property<MyButtonBase, string>({ name: "text", defaultValue: "", affectsLayout: isIOS });
 
@@ -15,9 +16,14 @@ export const myOpacityProperty = new CssProperty<Style, number>({
     }
 });
 
-export abstract class MyButtonBase extends View implements ButtonDefinition {
+export abstract class MyButtonBase extends TextBase implements ButtonDefinition {
     public static tapEvent = "tap";
     text: string;
+
+    constructor() {
+        super();
+        this.className = "mybtn";
+    }  
 
     // Exposing myOpacity style property through MyButton.
     // This is all optional. If not exposed users will have to set it

@@ -1,0 +1,33 @@
+/**
+ * Convenient single import for light variables
+ * Includes base variables with light overrides
+ **/
+/**
+ * Light variable overrides
+ **/
+.mybtn {
+  padding: 20;
+  /* iOS-not working, Android-ok */
+  background-color: #006968;
+  color: #fff;
+  /* not working, TextBase needed */
+  font-size: 20;
+  /* not working, TextBase needed */
+  font-weight: bold;
+  /* not working, TextBase needed */
+  font-style: normal;
+  /* not working, TextBase needed */
+  text-align: center;
+  /* iOS - not working, Android - ok, TextBase needed */
+  text-decoration: none;
+  /* not working, TextBase needed */
+  text-transform: lowercase;
+  /* not working, TextBase needed */
+  margin: 20;
+  border-color: #006968;
+  border-width: 5;
+  border-radius: 5;
+  width: 200;
+  height: 100;
+  visibility: visible;
+  opacity: 0.3; }
