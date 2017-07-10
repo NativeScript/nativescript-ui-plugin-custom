@@ -23,7 +23,7 @@ export abstract class MyButtonBase extends TextBase implements ButtonDefinition 
     constructor() {
         super();
         this.className = "mybtn";
-    }  
+    } 
 
     // Exposing myOpacity style property through MyButton.
     // This is all optional. If not exposed users will have to set it
