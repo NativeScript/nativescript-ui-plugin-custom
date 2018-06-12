@@ -25,6 +25,6 @@
     "karma-nativescript-launcher": "^0.4.0",
     "lazy": "1.0.11",
     "nativescript-dev-typescript": "libs",
-    "typescript": "^2.2.2"
+    "typescript": "2.3.4"
   }
 }
